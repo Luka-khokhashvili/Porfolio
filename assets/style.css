@@ -1,0 +1,148 @@
+/*// Fonts */
+/* font-family: "Ubuntu", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "PT Sans", sans-serif; */
+/* // */
+
+/* 
+TODO 1: create github repo, connect and upload files 
+TODO 2: add about section 
+TODO 3: add projects section and connect to the outer pages
+TODO 4: add experience section
+TODO 5: add footer
+
+TODO 6: add responsive styles
+TODO 7: finish up
+*/
+
+:root {
+  /* Color variables */
+  --primary-blue: #104b53;
+  --primary-orange: #d99b5e;
+  --light-orange: #fad9b8;
+
+  /* Secondary collors */
+  --grey: #999fb3;
+  --light-grey: #c6c6c6;
+}
+
+/* * 1. General styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* * 2. header styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensures the header sticks to the left edge of the viewport */
+  width: 100%; /* Makes the header take the full width of the viewport */
+  z-index: 9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 366px;
+  background-color: var(--primary-blue);
+}
+
+.main-name {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+}
+
+.main-name a {
+  color: inherit;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  list-style: none;
+}
+
+.nav-bar-item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light-grey);
+  transition: color 0.3s linear;
+}
+
+.nav-bar-item:hover {
+  color: var(--primary-orange);
+}
+
+.nav-bar-item a {
+  color: inherit;
+}
+
+/* * 3. Main styles */
+
+/* * Welcome section styles */
+.welcome-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1920 / 907;
+}
+
+.welcome-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+.welcome-heading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.orange-text {
+  font-size: 4.1rem;
+  color: var(--primary-orange);
+}
+
+.welcome-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+
+.resume-button {
+  margin-top: 80px;
+  padding: 20px 35px;
+  border-radius: 5px;
+  background-color: var(--primary-blue);
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
