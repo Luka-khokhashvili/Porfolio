@@ -5,19 +5,21 @@
 /* // */
 
 /* 
-TODO 1: create github repo, connect and upload files 
-TODO 2: add about section 
-TODO 3: add projects section and connect to the outer pages
-TODO 4: add experience section
-TODO 5: add footer
+*TODO 1: create github repo, connect and upload files 
+TODO 2: add and style about section 
+TODO 3: add and style projects section and connect to the outer pages
+TODO 4: add and style experience section
+TODO 5: add and style footer 
 
-TODO 6: add responsive styles
-TODO 7: finish up
+TODO 6: Recreate styles into mobile-first
+TODO 7: add responsive styles
+TODO 8: finish up
 */
 
 :root {
   /* Color variables */
   --primary-blue: #104b53;
+  --hover-blue: #1b5e67;
   --primary-orange: #d99b5e;
   --light-orange: #fad9b8;
 
@@ -26,27 +28,37 @@ TODO 7: finish up
   --light-grey: #c6c6c6;
 }
 
-/* * 1. General styles */
+/* * 1. Global styles */
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
 }
 
+.section-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: #43485c;
+}
+
 /* * 2. header styles */
 header {
   position: fixed;
   top: 0;
-  left: 0; /* Ensures the header sticks to the left edge of the viewport */
-  width: 100%; /* Makes the header take the full width of the viewport */
+  left: 0;
+  width: 100%;
   z-index: 9;
   display: flex;
   flex-direction: row;
@@ -145,4 +157,97 @@ header {
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.resume-button:hover {
+  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.4);
+  background-color: var(--hover-blue);
+}
+
+/** About section styles */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 16%;
+}
+
+.about-body-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.about-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.about-info {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--grey);
+  width: 93%;
+  margin-bottom: 20px;
+}
+
+.about-info-wrapper hr {
+  background-color: var(--light-grey);
+  width: 90%;
+  margin-right: 10%;
+}
+
+.details-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.detail-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+  margin: 10px 0 0 0;
+}
+
+.detail-title i {
+  font-size: 1.4rem;
+}
+
+.detail-info {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--grey);
+  margin: 10px 0;
+}
+
+.about-hero-image {
+  width: 450px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}
+
+.about-hero-image:hover {
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
