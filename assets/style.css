@@ -46,6 +46,13 @@ a {
   text-decoration: none;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-title {
   font-family: "PT Sans", sans-serif;
   font-size: 1.65rem;
@@ -167,10 +174,7 @@ header {
 
 /** About section styles */
 .about-section {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin: 30px 16%;
 }
 
@@ -254,10 +258,6 @@ header {
 
 /** Projects section styles */
 .projects-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--primary-blue);
   padding: 30px 16% 70px;
   gap: 20px;
@@ -332,4 +332,78 @@ header {
 .project-link:hover .hover-wrapper-text {
   opacity: 1;
   font-size: 1.4rem;
+}
+
+/** Experience section styles */
+.experience-section {
+  padding: 30px 16%;
+}
+
+.experience-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.experinece-date {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.experience-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--grey);
+  margin-top: 0;
+}
+
+.right-allign {
+  text-align: right;
+}
+
+.divider {
+  position: relative;
+  height: 190px;
+  margin-top: 20px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -6px;
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--primary-orange);
+}
+
+.right-half {
+  margin-right: -32%;
+}
+
+.company-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.location {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grey);
+  margin-top: 0;
+  margin-left: 10px;
 }
