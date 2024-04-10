@@ -412,7 +412,7 @@ header {
 
 /** profiles section styles */
 .profiles-section {
-  padding: 80px 16%;
+  padding: 100px 16%;
   flex-direction: row;
 }
 
@@ -426,7 +426,7 @@ header {
   justify-content: center;
   border: 1px solid var(--light-grey);
   border-top: none;
-  color: black;
+  color: var(--grey);
 }
 
 .after {
@@ -442,7 +442,8 @@ header {
 }
 
 .profile-tile svg path {
-  transition: all 0.3s linear;
+  fill: var(--grey);
+  transition: fill 0.3s linear;
 }
 
 .fa-brands {
@@ -455,7 +456,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
-  color: black;
+  color: var(--grey);
   margin: 0;
   transition: all 0.3s linear;
   z-index: 1;
