@@ -426,7 +426,7 @@ header {
   justify-content: center;
   border: 1px solid var(--light-grey);
   border-top: none;
-  color: var(--grey);
+  color: #43485c;
 }
 
 .after {
@@ -439,15 +439,17 @@ header {
 
 .profile-tile svg {
   z-index: 1;
+  width: 20px;
+  height: 20px;
 }
 
 .profile-tile svg path {
-  fill: var(--grey);
+  fill: #43485c;
   transition: fill 0.3s linear;
 }
 
 .fa-brands {
-  font-size: 2rem;
+  font-size: 1.3rem;
   transition: all 0.3s linear;
   z-index: 1;
 }
@@ -456,7 +458,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--grey);
+  color: #43485c;
   margin: 0;
   transition: all 0.3s linear;
   z-index: 1;
@@ -474,4 +476,58 @@ header {
 
 .profile-tile:hover > svg > path {
   fill: var(--light-orange);
+}
+
+/** 4. footer styles  */
+footer {
+  width: 100%;
+  background-color: var(--primary-blue);
+  padding: 18px 16%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.footer-p,
+.footer-mail {
+  font-family: "PT Sans";
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--grey);
+  margin: 0;
+}
+
+.footer-p:first-child {
+  margin-bottom: 10px;
+}
+
+.footer-mail {
+  font-size: 1rem;
+}
+
+.footer-links {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links .fa-brands {
+  font-size: 1.8rem;
+  color: var(--grey);
+  -moz-text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.65);
+  text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.65);
+}
+
+.footer-link:hover .fa-brands {
+  color: var(--light-orange);
 }
