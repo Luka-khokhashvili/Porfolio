@@ -1,0 +1,225 @@
+/* 
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+| responsive design for desktop devices |
+| ------- more then 1440px width ------ |
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+*/
+@media screen and (min-width: 1440px) {
+  /* ------------
+     -- header --
+     ------------ */
+  header {
+    padding: 0 366px;
+  }
+  .main-name {
+    font-size: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    width: auto;
+    height: auto;
+    position: static;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .nav-bar-item {
+    font-size: 1.2rem;
+  }
+
+  .nav-bar-item:hover {
+    color: var(--primary-orange);
+  }
+  /* ----------
+     -- main --
+     ---------- */
+
+  /* Welcome section */
+  .welcome-section {
+    aspect-ratio: 1920 / 907;
+  }
+
+  .welcome-banner {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .welcome-heading {
+    font-size: 6rem;
+    margin-top: 10%;
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .resume-button {
+    margin-top: 80px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .resume-button:hover {
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.4);
+    background-color: var(--hover-blue);
+  }
+  /* About section */
+  .about-section {
+    padding: 30px 16%;
+  }
+
+  .about-body-wrapper {
+    flex-direction: row;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .about-info {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    width: 93%;
+  }
+
+  .details-box {
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+  }
+
+  .about-hero-image {
+    width: 35%;
+  }
+
+  .about-hero-image:hover {
+    -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Projects section */
+  .projects-section {
+    padding: 30px 16% 70px;
+  }
+
+  .project-wrapper {
+    flex-direction: row;
+  }
+
+  .project-link:hover {
+    border: none;
+    .project-link-image {
+      transform: scale(1.3);
+    }
+    .hover-wrapper {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+    }
+    .hover-wrapper-text {
+      opacity: 1;
+      font-size: 1.4rem;
+    }
+  }
+
+  /* Experience section */
+  .experience-section {
+    padding: 30px 16%;
+  }
+
+  .experience-wrapper {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .experinece-date {
+    font-size: 1.5rems;
+  }
+
+  .right-allign {
+    text-align: right;
+  }
+
+  .divider {
+    position: relative;
+    height: 190px;
+    margin-top: 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+  }
+
+  .divider::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -6px;
+    width: 12px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--primary-orange);
+  }
+
+  .right-half {
+    margin-right: -34%;
+  }
+
+  .company-name {
+    font-size: 1.5rem;
+  }
+
+  /* Profiles section */
+  .profiles-section {
+    padding: 100px 16%;
+    flex-direction: row;
+  }
+
+  .profile-tile {
+    width: 30%;
+    border: 1px solid var(--light-grey);
+    border-top: none;
+  }
+
+  .profile-tile:hover {
+    .after {
+      width: 100%;
+      height: 100%;
+    }
+    .profile-link-title,
+    .fa-brands {
+      color: #fad9b8;
+    }
+    .profile-tile-icon path {
+      fill: #fad9b8;
+    }
+  }
+
+  /* ------------
+     -- Footer --
+     ------------ */
+  footer {
+    padding: 18px 16%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+  }
+
+  .footer-links {
+    width: 10%;
+  }
+
+  .footer-links .fa-brands {
+    font-size: 2rem;
+  }
+
+  .footer-link:hover .fa-brands {
+    color: var(--light-orange);
+  }
+}
