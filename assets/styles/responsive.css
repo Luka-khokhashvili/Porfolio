@@ -1,5 +1,101 @@
 /* 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+| responsive design for tablet devices |
+| ------- more then 1920px width ------ |
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+*/
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    width: auto;
+    height: auto;
+    position: static;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .nav-bar-item {
+    font-size: 1.2rem;
+  }
+
+  .welcome-section {
+    padding-bottom: unset;
+    height: 65vh;
+  }
+
+  .welcome-heading {
+    margin-top: unset;
+    font-size: 4.2rem;
+  }
+
+  .welcome-text {
+    font-size: 1.4rem;
+  }
+
+  .about-section {
+    justify-content: unset;
+    height: 96vh;
+  }
+
+  .about-info-wrapper hr {
+    margin-right: unset;
+    width: 100%;
+  }
+
+  .about-hero-image {
+    width: 45%;
+    position: absolute;
+    top: 48%;
+    left: 46%;
+  }
+
+  .projects-section {
+    padding: 0 12% 70px;
+  }
+
+  .profiles-section {
+    padding: 40px 30px 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+  }
+
+  .profile-tile {
+    border: 1px solid var(--light-grey);
+    border-top: none;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 20px 30px;
+  }
+
+  footer .main-name {
+    font-size: 1.5rem;
+  }
+
+  .footer-links {
+    width: auto;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .footer-links .fa-brands {
+    font-size: 2.7rem;
+  }
+}
+
+/* 
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 | responsive design for desktop devices |
 | ------- more then 1440px width ------ |
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -9,7 +105,7 @@
      -- header --
      ------------ */
   header {
-    padding: 0 366px;
+    padding: 0 16%;
   }
   .main-name {
     font-size: 2rem;
@@ -47,11 +143,6 @@
     aspect-ratio: 1920 / 907;
   }
 
-  .welcome-banner {
-    width: 100%;
-    margin-left: 0;
-  }
-
   .welcome-heading {
     font-size: 6rem;
     margin-top: 10%;
@@ -72,7 +163,7 @@
   }
   /* About section */
   .about-section {
-    padding: 30px 16%;
+    padding: 30px 12%;
   }
 
   .about-body-wrapper {
@@ -87,17 +178,17 @@
   .about-info {
     font-size: 1.5rem;
     line-height: 2.4rem;
-    width: 93%;
+    width: 100%;
   }
 
   .details-box {
     flex-direction: row;
     align-items: center;
-    width: 75%;
+    width: 100%;
   }
 
   .about-hero-image {
-    width: 35%;
+    width: 50%;
   }
 
   .about-hero-image:hover {
@@ -222,5 +313,26 @@
 
   .footer-link:hover .fa-brands {
     color: var(--light-orange);
+  }
+}
+
+/* 
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+| responsive design for desktop devices |
+| ------- more then 1920px width ------ |
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+*/
+@media screen and (min-width: 1920px) {
+  .about-section {
+    padding: 30px 16%;
+  }
+  .about-info {
+    width: 92%;
+  }
+  .details-box {
+    width: 75%;
+  }
+  .about-hero-image {
+    width: 35%;
   }
 }
