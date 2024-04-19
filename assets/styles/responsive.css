@@ -189,6 +189,7 @@
 
   .about-hero-image {
     width: 50%;
+    position: static;
   }
 
   .about-hero-image:hover {
@@ -270,7 +271,9 @@
   /* Profiles section */
   .profiles-section {
     padding: 100px 16%;
+    display: flex;
     flex-direction: row;
+    gap: unset;
   }
 
   .profile-tile {
@@ -323,16 +326,25 @@
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 */
 @media screen and (min-width: 1920px) {
+  .welcome-section {
+    height: auto;
+  }
   .about-section {
     padding: 30px 16%;
+    height: auto;
   }
   .about-info {
     width: 92%;
+  }
+  .about-info-wrapper hr {
+    width: 92%;
+    margin-right: 10%;
   }
   .details-box {
     width: 75%;
   }
   .about-hero-image {
     width: 35%;
+    position: static;
   }
 }

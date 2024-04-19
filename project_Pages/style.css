@@ -26,16 +26,16 @@ a {
 header {
   width: 100%;
   height: 90px; /* Adjust height as needed */
-  background-color: #ececec;
+  background-color: #104b53;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 19%;
+  padding: 0 16%;
   gap: 5%;
 }
 
 .navbar-brand {
-  color: #d92cf9;
+  color: #d99b5e;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -43,7 +43,7 @@ header {
 }
 
 .heading {
-  color: #630070;
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -152,8 +152,29 @@ header {
 }
 
 /* Responsive CSS */
-@media screen and (max-width: 768px) {
-  .main-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .main-grid,
+  .games-main-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .main-grid,
+  .games-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info {
+    padding: 10px 2%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    padding: 0 3%;
+  }
+  .main-grid,
+  .games-main-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
