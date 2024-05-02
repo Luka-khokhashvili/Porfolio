@@ -1,7 +1,11 @@
+/* !? Responsive styles for porfolio project */
+
+/* !? Made by luka khokhashvili */
+
 /* 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 | responsive design for tablet devices |
-| ------- more then 1920px width ------ |
+| ------- more then 768px width ------ |
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 */
 @media screen and (min-width: 768px) {
@@ -348,3 +352,5 @@
     position: static;
   }
 }
+
+/* Some styles in media queries work for bigger screens as well */

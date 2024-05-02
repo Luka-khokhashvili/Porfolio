@@ -1,28 +1,16 @@
-/*// Fonts */
-/* font-family: "Ubuntu", sans-serif; */
-/* font-family: "Poppins", sans-serif; */
-/* font-family: "PT Sans", sans-serif; */
-/* // */
-
-/* 
-*TODO 1: create github repo, connect and upload files 
-*TODO 2: add and style about section 
-*TODO 3: add and style projects section and connect to the outer pages
-*TODO 4: add and style experience section
-*TODO 5: add and style profiles section
-*TODO 6: add and style footer 
-
-*TODO 7: Recreate styles into mobile-first
-  {
-    *about section
-    *projects section, fix outer page mobile responsivnes
-    *experience section
-    *profiles section
-    *footer
-  }
-TODO 8: add responsive styles
-TODO 9: finish up
+/* Content:
+  1. Global styles
+  2. Header styles
+  3. Main styles:
+	  > Welcome section
+	  > About section
+	  > Projects section
+	  > Experience section
+	  > Profiles section
+  4. Footer styles
 */
+
+/* !? design and styles by luka khokhashvili */
 
 :root {
   /* Color variables */
